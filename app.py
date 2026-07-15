@@ -39,11 +39,11 @@ elif page == "?? Grade Calculator":
           st.error(f"❌ **{subject}**: {mark}/100 — **FAIL**")
           all_passed = False
 
-     st.markdown("---")
-     percentage = (total_marks / 500) * 100
-     st.metric(label="Overall Percentage", value=f"{percentage:.2f}%")
+      st.markdown("---")
+      percentage = (total_marks / 500) * 100
+      st.metric(label="Overall Percentage", value=f"{percentage:.2f}%")
 
-     if all_passed:
-       st.success("?? FINAL RESULT: PASSED THE SEMESTER!")
-     else:
-       st.error("⚠️ FINAL RESULT: FAILED (Must clear all individual subjects)")
+      if all_passed:
+            st.success("?? FINAL RESULT: PASSED THE SEMESTER!")
+      else:
+            st.error("⚠️ FINAL RESULT: FAILED (Must clear all individual subjects)")
